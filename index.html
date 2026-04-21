@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THANA SHOP - Link in Bio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at center, #1a1a2e 0%, #020205 100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        /* เอฟเฟกต์พื้นหลังลายจุด (Particles) */
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        /* รูปโปรไฟล์ */
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            margin-bottom: 20px;
+            object-fit: cover;
+            background-color: #000;
+        }
+
+        /* หัวข้อไล่เฉดสี */
+        .title {
+            font-size: 24px;
+            font-weight: 500;
+            background: linear-gradient(90deg, #ff8a00 0%, #e52e71 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        /* ปุ่มลิงก์สไตล์ Glassmorphism */
+        .link-card {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 15px 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .link-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-3px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .link-card i:first-child {
+            font-size: 20px;
+            width: 30px;
+        }
+
+        .link-card span {
+            flex-grow: 1;
+            text-align: left;
+            margin-left: 10px;
+            font-weight: 300;
+        }
+
+        .external-icon {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #444;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-overlay"></div>
+
+    <div class="container">
+        <img src="logo.png" alt="Profile" class="profile-img">
+        
+        <h1 class="title">THANA SHOP</h1>
+        <p class="subtitle">ยินดีต้อนรับสู่ร้านของเรา</p>
+
+        <a href="https://www.tiktok.com/@hslesm?_r=1&_t=ZS-95ikdcll9QW" target="_blank" class="link-card">
+            <i class="fab fa-tiktok" style="color: #fff;"></i>
+            <span>ติดตาม TikTok ของเรา</span>
+            <i class="fas fa-external-link-alt external-icon"></i>
+        </a>
+
+        <a href="https://discord.gg/PVmVEd33K" target="_blank" class="link-card">
+            <i class="fab fa-discord" style="color: #7289da;"></i>
+            <span>เข้าร่วมกลุ่ม Discord</span>
+            <i class="fas fa-external-link-alt external-icon"></i>
+        </a>
+
+        <a href="https://www.facebook.com/share/1AwD5JTcxD/?mibextid=wwXIfr" target="_blank" class="link-card">
+            <i class="fab fa-facebook" style="color: #1877F2;"></i>
+            <span>ติดต่อผ่าน Facebook</span>
+            <i class="fas fa-external-link-alt external-icon"></i>
+        </a>
+
+        <div class="footer">THANA SHOP © 2024</div>
+    </div>
+
+</body>
+</html>
